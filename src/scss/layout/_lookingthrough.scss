@@ -3,8 +3,43 @@
   flex-direction: column;
   text-align: left;
   background-color: $color-bg;
+  margin-left: 15px;
   &--insomnia {
+    margin: 40px 0px 10px 0px;
+
     color: $color-bluligth;
     text-transform: capitalize;
+    font-size: 14px;
+  }
+}
+
+.article {
+  font-size: 18px;
+  &--title {
+    text-transform: capitalize;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+    &__text::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.go {
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: $color-bg;
+  border: solid $color-orange 2px;
+  color: $color-orange;
+  padding: 5px 20px 5px 20px;
+  margin-top: 26px;
+  width: 76px;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    color: $color-orange;
   }
 }
