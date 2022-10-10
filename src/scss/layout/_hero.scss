@@ -1,0 +1,40 @@
+.hero {
+  color: $color-bg;
+
+  height: 100vh;
+  background-image: url(../images/cover.jpeg);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: end;
+  align-items: center;
+  &--title {
+    text-transform: uppercase;
+    word-spacing: 100vw;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Roboto Slab";
+    &__sentence {
+      font-family: "Roboto";
+      font-weight: normal;
+      font-size: 16px;
+      font-style: normal;
+      line-height: 1.19;
+      margin-top: 15px;
+    }
+  }
+}
+
+.linkhero {
+  background-color: $color-bg;
+  border-radius: 25px;
+  width: 37.9px;
+  height: 37px;
+  padding-top: 10px;
+  margin: 35px 0px 34px 0px;
+  &--image {
+    width: 17px;
+    height: 10px;
+  }
+}

@@ -8,9 +8,6 @@
 @import 'pages/index';*/
 @import "core/variables";
 @import "core/reset";
-
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
+@import "layout/header";
+@import "layout/hero";
+@import "layout/lookingthrough";

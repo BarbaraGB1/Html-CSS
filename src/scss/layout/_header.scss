@@ -1,5 +1,17 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.nav-header {
+  background-color: $color-bluemedium;
+  width: 30px;
+  position: fixed;
+  z-index: 99;
+}
+
+.menu {
+  display: inline-block;
+  color: $color-bg;
+  &:hover:visited {
+    color: $color-bg;
+  }
+  margin-left: 2.6px;
+  padding: 5px;
+  text-align: center;
 }

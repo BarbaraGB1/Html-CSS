@@ -1,0 +1,10 @@
+.looking {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: $color-bg;
+  &--insomnia {
+    color: $color-bluligth;
+    text-transform: capitalize;
+  }
+}
