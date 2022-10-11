@@ -1,24 +1,25 @@
 .reasons {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-template-rows: 65px 144px 144px 130px 100px;
   text-align: center;
   background-color: #eff9ff;
+  padding-top: 29px;
   margin-top: 45px;
-  height: 550px;
+  height: 670px;
   &--title {
     text-transform: capitalize;
     font-family: "Roboto Slab";
     font-weight: bold;
     font-size: 24px;
-    margin-top: 29px;
   }
 }
 
 .blue {
+  padding: 0px 15px 0px 15px;
   &--h2 {
     font-family: "Roboto slab";
-    font-weight: 600;
+    font-weight: bold;
     font-size: 19px;
     line-height: 1.7;
 
@@ -52,4 +53,51 @@
   color: $color-bg;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+@media all and (min-width: 768px) {
+  .reasons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    height: 400px;
+    padding: 36px 35.7px 50px 35.7px;
+    &--title {
+      grid-column: 1/4;
+      font-size: 26px;
+      margin-bottom: 38px;
+    }
+  }
+  .buttonsection2 {
+    grid-column: 2/3;
+    width: 210px;
+    padding-top: 15px;
+    padding-left: 5px;
+  }
+  .blue {
+    &--h2 {
+      font-size: 24px;
+      line-height: 2.5;
+      &__p {
+        font-size: 20px;
+        width: 213px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .reasons {
+    padding: 61px 85px 50px 85px;
+  }
+  .blue {
+    &--h2 {
+      &__p {
+        width: 353px;
+      }
+    }
+  }
+  .buttonsection2 {
+    width: 255px;
+  }
 }
