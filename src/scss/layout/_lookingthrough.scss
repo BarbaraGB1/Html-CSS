@@ -43,8 +43,12 @@
   height: 45px;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
   &:hover {
     color: $color-orange;
+    margin-left: 20px;
+    width: 200px;
   }
 }
 @media all and (min-width: 768px) {
