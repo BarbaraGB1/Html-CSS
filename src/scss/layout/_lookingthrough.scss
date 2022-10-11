@@ -1,28 +1,31 @@
 .looking {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  background-color: $color-bg;
-  margin-left: 15px;
-  &--insomnia {
-    margin: 40px 0px 10px 0px;
+  align-items: center;
 
-    color: $color-bluligth;
-    text-transform: capitalize;
-    font-size: 14px;
-  }
+  background-color: $color-bg;
+  margin: 40px 15px 35px 15px;
+}
+.insomnia {
+  text-align: left;
+  color: $color-bluligth;
+  text-transform: capitalize;
+  font-size: 14px;
 }
 
 .article {
-  font-size: 18px;
   &--title {
     text-transform: capitalize;
     font-family: "Roboto Slab";
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 20px;
-    &__text::first-letter {
-      text-transform: capitalize;
+    margin-top: 20px;
+    &__text {
+      font-size: 18px;
+      &__text:first-letter {
+        text-transform: capitalize;
+      }
     }
   }
 }
@@ -30,16 +33,54 @@
 .go {
   display: inline-block;
   font-size: 20px;
-  border-radius: 20px;
+  border-radius: 22px;
   background-color: $color-bg;
-  border: solid $color-orange 2px;
+  border: solid $color-orange 2.5px;
   color: $color-orange;
-  padding: 5px 20px 5px 20px;
+  padding: 10px 25px 10px 23px;
   margin-top: 26px;
   width: 76px;
+  height: 45px;
   text-align: center;
   text-decoration: none;
   &:hover {
     color: $color-orange;
+  }
+}
+@media all and (min-width: 768px) {
+  .looking {
+    margin: 40px 39px 60px 39px;
+  }
+  .article {
+    width: 690px;
+    &--title {
+      font-size: 26px;
+      margin-bottom: 27px;
+      &__text {
+        font-size: 20px;
+      }
+    }
+  }
+  .go {
+    width: 91px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .looking {
+    margin: 65px 275px 60px 275px;
+  }
+  .article {
+    &--title {
+      font-size: 32px;
+      margin-bottom: 37px;
+    }
+  }
+  .insomnia {
+    font-size: 16px;
+  }
+  .go {
+    width: 160px;
+    margin-top: 37px;
   }
 }
