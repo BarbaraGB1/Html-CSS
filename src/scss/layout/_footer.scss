@@ -6,7 +6,7 @@
   background-color: $color-bluedark;
   color: $color-bg;
 }
-.flecha {
+.arrow {
   margin-bottom: 40px;
   transform: translate(0%, -50%);
   background-color: $color-bg;
@@ -16,7 +16,7 @@
   height: 50px;
   text-align: center;
 }
-.lista {
+.list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
   font-family: "Roboto";
 }
 
-.enlace {
+.link {
   color: $color-bg;
   text-transform: uppercase;
   font-size: 16px;
@@ -34,7 +34,7 @@
   box-shadow: none;
   text-decoration: none;
 }
-.enlace:hover:visited:active {
+.link:hover:visited:active {
   color: $color-bg;
 }
 
@@ -47,4 +47,7 @@
   &::first-line {
     word-spacing: 100vw;
   }
+}
+.fa-heart {
+  margin: 0px 4px 0px 4px;
 }
