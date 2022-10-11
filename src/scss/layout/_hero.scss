@@ -38,8 +38,8 @@
   padding-top: 10px;
   margin: 35px 0px 34px 0px;
   &--image {
-    width: 17px;
-    height: 10px;
+    width: 21px;
+    height: 21px;
   }
 }
 
@@ -56,6 +56,12 @@
   }
   .linkhero {
     margin-top: 10px;
+    width: 45px;
+    height: 42.5px;
+    &--image {
+      width: 25px;
+      height: 27px;
+    }
   }
 }
 
@@ -70,5 +76,11 @@
   }
   .linkhero {
     margin-top: 34px;
+    width: 44px;
+    height: 45px;
+    &--image {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
