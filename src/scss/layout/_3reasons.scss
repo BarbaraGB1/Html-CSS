@@ -6,19 +6,20 @@
   background-color: #eff9ff;
   padding-top: 29px;
   margin-top: 45px;
-  height: 670px;
+
   &--title {
     text-transform: capitalize;
-    font-family: "Roboto Slab";
+    font-family: $font-text;
     font-weight: bold;
     font-size: 24px;
+    color: black;
   }
 }
 
 .blue {
   padding: 0px 15px 0px 15px;
   &--h2 {
-    font-family: "Roboto slab";
+    font-family: $font-text;
     font-weight: bold;
     font-size: 19px;
     line-height: 1.7;
@@ -54,14 +55,35 @@
   text-decoration: none;
   text-transform: capitalize;
 }
+.buttonarrow {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0%, 70%);
+  justify-self: center;
+  z-index: 99;
+  width: 45px;
+}
+
+.arrow {
+  display: inline-block;
+  margin-bottom: 40px;
+  background-color: $color-bg;
+  border-radius: 100px;
+  font-size: 50px;
+  width: 52px;
+  height: 50px;
+  text-align: center;
+  width: 45px;
+}
 
 @media all and (min-width: 768px) {
   .reasons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    height: 400px;
-    padding: 36px 35.7px 50px 35.7px;
+    grid-template-rows: auto auto auto auto;
+
+    padding: 36px 35.7px 0px 35.7px;
     &--title {
       grid-column: 1/4;
       font-size: 26px;
@@ -84,11 +106,21 @@
       }
     }
   }
+  .buttonarrow {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
 }
 
 @media all and (min-width: 1280px) {
   .reasons {
-    padding: 61px 85px 50px 85px;
+    padding: 61px 85px 0px 85px;
+    &--title {
+      font-size: 32px;
+    }
   }
   .blue {
     &--h2 {
@@ -99,5 +131,6 @@
   }
   .buttonsection2 {
     width: 255px;
+    margin-bottom: 20px;
   }
 }
