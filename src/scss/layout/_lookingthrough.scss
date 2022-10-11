@@ -22,13 +22,12 @@
     margin-top: 20px;
     &__text {
       font-size: 18px;
-      &__text:first-letter {
-        text-transform: capitalize;
-      }
     }
   }
 }
-
+.article--title__text {
+  text-transform: capitalize;
+}
 .go {
   display: inline-block;
   font-size: 20px;
